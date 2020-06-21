@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+    <title>Trello-Like</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="menu">
+        <li class="pointer">
+          <i class="home fas fa-home"></i>
+        </li>
+        <li class="pointer">
+            <i class="boards fas fa-th-list"></i>
+            Boards
+        </li>
+        <li class="menu-input">
+            <input type="text" />
+        </li>
+    </ul>
+    <div class="app-title">
+        Tralala
+    </div>
+    <div class="actions">
+        <span class="pointer">
+            <i class="fas fa-plus" id="add-board"></i>
+        </span>
+        <span class="pointer">
+            <i class="fas fa-user" id="profile-image"></i>
+        </span>
+    </div>
+</nav>
+
+    <div class="board-layout">
+      <div class="board-menu">
+        <div class="board-title">Frontend Training</div>
+        <div class="board-show-menu pointer">
+            
+            <a style="cursor: pointer !important;"><i class="fas fa-ellipsis-v"></i> Show menu</a>
+        </div>
+      </div>
+      <div id='boardlists' class="board-lists">
+        <div id='list1' class="board-list">
+          <div class="list-title">
+            To Do
+            <span style="float:right">...</span>
+          </div>
+
+            <div  id='card1' class="card" draggable="true">
+            Learn HTML
+            <i  class=" fas fa-pencil-alt onhover"></i>
+            </div>
+            <div  id='card2' class="card" draggable="true">
+            Learn CSS
+            <i class=" fas fa-pencil-alt onhover"></i>
+            </div>
+            <div  id='card3' class="card" draggable="true">
+              Learn Javascript
+              <i class=" onhover fas fa-pencil-alt "></i>
+              </div>
+            <a style="cursor: pointer !important;" >+ Add another card</a>
+         
+        </div>
+        <div  id='list2' class="board-list">
+          <div  class="list-title">
+          Doing
+          <span style="float:right">...</span>
+          </div>
+          <div  id='card1' class="card" draggable="true">
+            Prepare Resume
+            </div>
+            <form>
+              <textarea rows="4" style="width: 250px;" placeholder="Enter a title for this card..." ></textarea><br>
+              <div>
+                  <button style="background-color: green; font-size: 15px; border-radius: 4px; color: white; padding: 10px; cursor: pointer !important; ">Add Card</button>
+              </div>
+          </form>
+          
+          
+        </div>
+
+        <div  id='list3' class="board-list" >
+          <div  class="list-title">
+            Testing/Verifying
+            <span style="float:right">...</span>
+            </div>
+            <div  id='card1' class="card" draggable="true">
+              Twitter app frontend
+              </div>
+            <a style="cursor: pointer !important;" >+ Add another card</a>
+            </div>
+
+            <div  id='list4' class="board-list" >
+              <div  class="list-title">
+                Deploying
+                <span style="float:right">...</span>
+                </div>
+                <div  id='card1' class="card" draggable="true">
+                  Twitter app backend
+                  </div>
+
+                <a style="cursor: pointer !important;">+ Add another card</a>
+                </div>
+
+        <div  id='list5' class="board-list" >
+          <div  class="list-title">
+            Done
+            <span style="float:right">...</span>
+            </div>
+            <a style="cursor: pointer !important;">+ Add card</a>
+            </div>
+
+            <div  id='list6' class="board-list" >
+                  <a  style="cursor: pointer !important;  " >+ Add another list</a>
+                  </div>
+
+
+                  <div  id='list7' class="board-list" >
+                    <form>
+                      <textarea rows="4" style="width: 250px;" placeholder="Enter list title...." ></textarea><br>
+                      <div>
+                          <button style="background-color: green; font-size: 15px; border-radius: 4px; color: white; padding: 10px; cursor: pointer !important;"">Add Card</button>
+                      </div>
+                      
+                  </form>
+                    </div>
+            </div>
+          </div>  
+      </div>
+      
+    </div>
+
+    
+</body>
+</html>

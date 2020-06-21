@@ -1,0 +1,166 @@
+body{
+  background-image: url("back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.board-layout {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    grid-template-rows: max-content auto;
+    grid-gap: 10px;
+    height:800px;
+   width: 100%;
+    display: grid;
+
+  }
+.list-layout {
+    display: grid;
+    grid-gap: 10px;
+   
+  }
+.board-text {
+    font-weight: bold;
+    font-size: 28px;
+    padding: 5px;
+  }
+.board-lists {
+    display: grid;
+    grid-auto-columns: 275px;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    height: 400px;
+    margin-top: 100px;
+
+  }
+  
+  .board-list {
+    background-color: rgb(235, 236, 240);
+    border-radius: 3px;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-gap: 10px;
+    height: max-content;
+    padding: 10px;
+  }
+  
+  .list-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+.card {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+    padding: 10px;
+    cursor:pointer;
+  }
+.card:hover .onhover{
+  opacity: 0.7;
+}
+
+  .navbar {
+   
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    padding: 10px;
+    background-color: rgba(51, 140, 172, 0.65);
+    color: white;
+    position:fixed;
+}
+
+.navbar .pointer:hover {
+    opacity: 0.75;
+}
+
+.navbar > * {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .menu > *, .navbar .actions > * {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 2px;
+    margin: 0px 4px;
+    background-color: rgba( 64, 144, 172, 1 );
+}
+
+.navbar .menu {
+    justify-content: flex-start;
+}
+
+.navbar .menu-input {
+    background-color: transparent;
+    padding: 0;
+}
+
+.navbar .menu-input input {
+    width: 120px;
+    padding: 4px 0.5em;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-color: rgba( 64, 144, 172, 1 );
+    color: white;
+    font-size: 1.15em;
+    line-height: 1.4;
+    color: black;
+}
+
+.navbar .menu-input input:focus {
+    background-color: white;
+}
+
+.navbar .app-title {
+    justify-content: space-around;
+    font-family: "Comic Sans", "Comic Sans MS", cursive;
+    font-size: 1.3em;
+}
+
+.navbar .actions {
+    justify-content: flex-end;
+}
+
+
+.board-menu {
+  position:fixed ;
+  top: 49px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  padding: 10px;
+  background-color: rgba( 128, 128, 128, 0.3 );
+  color: white;
+}
+
+button:hover{
+  opacity: 0.7;
+}
+a:hover{
+  opacity: 0.7;
+}
+
+span{
+  cursor: pointer !important;
+}
+span:hover{
+  opacity: 0.7;
+}
+.onhover{
+  float: right;
+  opacity: 0;
+}
